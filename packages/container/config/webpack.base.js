@@ -1,5 +1,5 @@
 const path = require('path');
-const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const baseConfig = {
   entry: './src/index.js',
@@ -25,6 +25,7 @@ const baseConfig = {
       },
     ],
   },
+  plugins: [new HtmlWebpackPlugin({ template: './public/index.html' })],
 };
 
 module.exports = baseConfig;
