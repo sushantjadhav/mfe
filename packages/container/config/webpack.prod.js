@@ -17,8 +17,8 @@ const prodConfig = {
       name: 'container',
       remotes: {
         marketingRemote: `marketing@${domain}/marketing/remoteEntry.js`,
-        bootstrapRemote: `bootstrap@${domain}/bootstrap/remoteEntry.js`,
         authRemote: `auth@${domain}/auth/remoteEntry.js`,
+        dashboardRemote: `dashboard@${domain}/dashboard/remoteEntry.js`,
       },
       shared: packageJeson.dependencies,
     }),
